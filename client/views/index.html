@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hackathon</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <base href="/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="js/lib/bundles/ng-table.css">
+</head>
+
+<body ng-app="DD-Hackathon">
+<div class="">
+    <header>
+        <nav class="navbar navbar-inverse custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">HACKATHON</a>
+                </div>
+                <ul class="nav navbar-nav pull-right custom-navbar">
+                    <li class="active"><a href="" ui-sref="table">Table</a></li>
+                    <li><a href="" ui-sref="logs">Logs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<footer class="footer">
+    <!--FOoter-->
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/components/angular/angular.min.js"></script>
+<script type="text/javascript" src="/components/angular-cookies/angular-cookies.min.js"></script>
+<script type="text/javascript" src="/components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="js/lib/bundles/ng-table.js"></script>
+<script src="/components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/services.js"></script>
+<script type="text/javascript" src="/js/logsCrtl.js"></script>
+<script src="js/datePicker.js"></script>
+</body>
+</html>

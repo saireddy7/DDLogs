@@ -1,0 +1,40 @@
+<div ng-controller="logsCrtl">
+    <ul class="list-inline title-ul">
+        <h3>Total count: {{count}}</h3>
+        <li class="col-xs-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" ng-model="searchString" ng-change="getCount()">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            </div>
+        </li>
+     <!--   <li class="col-xs-2">
+            <date-picker ng-model="date"></date-picker>
+        </li>-->
+        <li class="pull-right col-xs-3">
+            <select class="form-control" ng-model="filterBy" ng-change="init()">
+                <option selected value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <!--<option>Payment pending</option>-->
+            </select>
+        </li>
+        <div class="clearfix"></div>
+    </ul>
+    <table class="table table-bordered table-striped table-condensed table-hover ng-table-responsive" ng-table="logParams">
+        <tr ng-repeat="log in currentPageOfLogs" style="text-align: center;">
+            <td data-title="'S No'">
+                {{$index+1}}
+            </td>
+            <td data-title="'Time'" sortable="'log.time'" class="clickable-item">
+                {{log.time | date:'medium'}}
+            </td>
+            <td data-title="'URL'" sortable="'log.req.url'" class="clickable-item">
+                {{log.req.url}}
+            </td>
+            <td data-title="'Time'" sortable="'log.req.method'" class="clickable-item">
+                {{log.req.method}}
+            </td>
+        </tr>
+    </table>
+</div>
