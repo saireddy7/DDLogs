@@ -1,5 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Node template
 # Logs
-logs
+server/logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -25,11 +27,14 @@ coverage
 
 # Bower dependency directory (https://bower.io/)
 bower_components
+client/dist
+client/assets
+client/images/profile-pics
 
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
+# Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
@@ -57,3 +62,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# Webstorm
+.idea
+
+# MAC OS
+.DS_Store
+!/server/apis/truckAPIs.js
+
+#package-lock.json
+package-lock.json
